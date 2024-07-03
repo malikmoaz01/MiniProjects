@@ -1,0 +1,14 @@
+first npm i 
+npm i bootstrap
+then npm install speech-to-text
+
+if its not work then 
+
+Follow That Procedure 
+
+npx create-react-app translator 
+cd translator 
+
+then copy data.js into transltor folder 
+& Copy App.js code itno ur own app.js file
+& last step is  to copy component folder & add into src folder(Own)

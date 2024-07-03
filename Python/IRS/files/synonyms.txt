@@ -1,0 +1,16 @@
+write: compose,draft,author,create
+file: document,record,dossier,report
+example: illustration,instance,sample,demonstration
+query: question, inquiry, search, request
+synonym: equivalent, substitute, alternate, replacement
+retrieve: fetch, recover, obtain, bring back
+system: framework, structure, organization, arrangement
+search: seek, look for, explore, examine
+lost: misplaced, missing, forgotten, mislaid
+pen: write, ink, ballpoint, fountain
+paper: document, sheet, form, letter
+book: novel, volume, publication, tome
+read: peruse, scan, study, look at
+interesting: fascinating, engaging, intriguing, absorbing
+computer: machine, device, processor, laptop
+software: program, application, app, platform

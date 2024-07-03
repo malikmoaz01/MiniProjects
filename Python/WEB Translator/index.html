@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-to-Text and Translation</title>
+</head>
+<body>
+    <div>
+        <h1>Speech-to-Text and Translation</h1>
+        <button onclick="startSpeechRecognition()">Start Speech Recognition</button>
+        <p id="transcription"></p>
+        <p id="translation"></p>
+    </div>
+
+    <script>
+        function startSpeechRecognition() {
+            var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
+
+            recognition.onresult = function (event) {
+                var transcript = event.results[0][0].transcript;
+                document.getElementById("transcription").innerHTML = "Transcription: " + transcript;
+
+                // Send the transcript to the server for translation (you can use AJAX for this)
+                translateText(transcript);
+            };
+
+            recognition.start();
+        }
+
+        function translateText(text) {
+            // Send the text to your server for translation or use an API like googletrans
+            // Update the translation result in the HTML
+            document.getElementById("translation").innerHTML = "Translation: (Your translation logic here)";
+        }
+    </script>
+</body>
+</html>

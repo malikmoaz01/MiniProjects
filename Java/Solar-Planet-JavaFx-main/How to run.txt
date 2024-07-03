@@ -1,0 +1,16 @@
+Set JavaFx in the Visual Studio 
+(For this firslty install javafx in zip
+then extract it  
+then go to visual studio 
+then download extension package 
+then copy lib into there 
+) 
+
+
+<><><>1st Compile Like That 
+
+javac --module-path "C:\Program Files\Java\javafx-sdk-22.0.1\lib" --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.graphics,javafx.media,javafx.swing,javafx.web -d out src\*.java
+
+<><><>2nd is <>
+
+java --module-path "C:\Program Files\Java\javafx-sdk-22.0.1\lib" --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.graphics,javafx.media,javafx.swing,javafx.web -classpath out Main
